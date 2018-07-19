@@ -34,7 +34,7 @@ sertif_name VARCHAR(255) NOT NULL,
 issue_date DATE NOT NULL,
 company_name VARCHAR(255) NOT NULL,
 code INTEGER NOT NULL UNIQUE ,
-skan,
+skan BLOB NOT NULL,
 FOREIGN KEY (employee_id) REFERENCES employee(id)
 };
 
